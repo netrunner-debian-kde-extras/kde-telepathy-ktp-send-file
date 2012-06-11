@@ -1,0 +1,77 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"PO-Revision-Date: 2012-01-17 12:40+0100\n"
+"Last-Translator: Kristóf Kiszel <ulysses@kubuntu.org>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Fájl küldése - %1"
+
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Keresés a névjegyek között…"
+
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Nem sikerült elküldeni a fájlt"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "A fájlátvitel félbeszakadt"
+
+#: main.cpp:36
+msgid "Telepathy Send File"
+msgstr "Telepathy fájlküldés"
+
+#: main.cpp:38
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: main.cpp:38
+msgid "Author"
+msgstr "Szerző"
+
+#: main.cpp:43
+msgid "The file to send"
+msgstr "Az elküldendő fájl"
+
+#: main.cpp:52
+msgid "Select File To Send"
+msgstr "Válassza ki az elküldendő fájlt"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@kubuntu.org"
+
+#. i18n: file: mainwindow.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:5
+msgid "You are about to send this file"
+msgstr "A fájl elküldésére készül"
+
+#. i18n: file: mainwindow.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Select a recipient"
+msgstr "Válassza ki a címzettet"

@@ -1,0 +1,77 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ni Hui <shuizhuyuanluo@126.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"PO-Revision-Date: 2012-01-22 14:53+0800\n"
+"Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
+"Language-Team: Chinese Simplified <kde-china@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "发送文件 - %1"
+
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "搜索联系人..."
+
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "发送文件失败"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "文件传输失败"
+
+#: main.cpp:36
+msgid "Telepathy Send File"
+msgstr "Telepathy 发送文件"
+
+#: main.cpp:38
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: main.cpp:38
+msgid "Author"
+msgstr "作者"
+
+#: main.cpp:43
+msgid "The file to send"
+msgstr "要发送的文件"
+
+#: main.cpp:52
+msgid "Select File To Send"
+msgstr "选择要发送的文件"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
+
+#. i18n: file: mainwindow.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:5
+msgid "You are about to send this file"
+msgstr "您即将发送此文件"
+
+#. i18n: file: mainwindow.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Select a recipient"
+msgstr "选择接收者"

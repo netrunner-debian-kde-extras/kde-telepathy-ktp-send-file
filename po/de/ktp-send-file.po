@@ -1,0 +1,87 @@
+# Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktp-send-file\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"PO-Revision-Date: 2012-05-16 19:58+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Datei senden - %1"
+
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Suche in Kontakten ..."
+
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Das Senden der Datei ist fehlgeschlagen"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Dateiübertragung fehlgeschlagen"
+
+#: main.cpp:36
+msgid "Telepathy Send File"
+msgstr "Telepathy-Dateiübertragung"
+
+#: main.cpp:38
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: main.cpp:38
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:43
+msgid "The file to send"
+msgstr "Die zu sendende Datei"
+
+#: main.cpp:52
+msgid "Select File To Send"
+msgstr "Datei zum Senden auswählen"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Frederik Schwarzer"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "schwarzer@kde.org"
+
+#. i18n: file: mainwindow.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:5
+msgid "You are about to send this file"
+msgstr "Sie sind dabei, diese Datei zu senden"
+
+#. i18n: file: mainwindow.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Select a recipient"
+msgstr "Einen Empfänger auswählen"
+
+#~ msgid "Select Recipient"
+#~ msgstr "Empfänger auswählen"
+
+#~ msgid "MainWindow"
+#~ msgstr "Hauptfenster"
+
+#~ msgid "Description here"
+#~ msgstr "Beschreibung"
+
+#~ msgid "(c) KDE"
+#~ msgstr "© KDE"

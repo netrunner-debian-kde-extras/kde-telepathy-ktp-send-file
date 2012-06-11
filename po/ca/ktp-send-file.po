@@ -1,0 +1,80 @@
+# Translation of ktp-send-file.po to Catalan
+# Copyright (C) 2012 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktp-send-file\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"PO-Revision-Date: 2012-05-03 22:07+0200\n"
+"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Envia fitxer - %1"
+
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Cerca en els contactes..."
+
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Ha fallat en enviar el fitxer"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Ha fallat la transferència de fitxer"
+
+#: main.cpp:36
+msgid "Telepathy Send File"
+msgstr "Enviament de fitxer del Telepathy"
+
+#: main.cpp:38
+msgid "David Edmundson"
+msgstr "David Edmundson"
+
+#: main.cpp:38
+msgid "Author"
+msgstr "Autor"
+
+#: main.cpp:43
+msgid "The file to send"
+msgstr "El fitxer a enviar"
+
+#: main.cpp:52
+msgid "Select File To Send"
+msgstr "Selecció del fitxer a enviar"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep Ma. Ferrer"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@gmail.com"
+
+#. i18n: file: mainwindow.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:5
+msgid "You are about to send this file"
+msgstr "Esteu a punt d'enviar aquest fitxer"
+
+#. i18n: file: mainwindow.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:8
+msgid "Select a recipient"
+msgstr "Seleccioneu un destinatari"
