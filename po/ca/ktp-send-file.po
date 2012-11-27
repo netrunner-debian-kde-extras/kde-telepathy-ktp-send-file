@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-05-03 22:07+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -20,22 +20,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
 
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Envia fitxer - %1"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep Ma. Ferrer"
 
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Cerca en els contactes..."
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Ha fallat en enviar el fitxer"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Ha fallat la transferència de fitxer"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@gmail.com"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -57,24 +48,29 @@ msgstr "El fitxer a enviar"
 msgid "Select File To Send"
 msgstr "Selecció del fitxer a enviar"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Josep Ma. Ferrer"
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Envia fitxer - %1"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "txemaq@gmail.com"
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Cerca en els contactes..."
 
-#. i18n: file: mainwindow.ui:33
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Ha fallat en enviar el fitxer"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Ha fallat la transferència de fitxer"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:5
+#: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Esteu a punt d'enviar aquest fitxer"
 
-#. i18n: file: mainwindow.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
+#: mainwindow.ui:112
 msgid "Select a recipient"
 msgstr "Seleccioneu un destinatari"

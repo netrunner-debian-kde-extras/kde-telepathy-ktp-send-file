@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-03-19 01:08+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -18,23 +18,6 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
-
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Слање фајла — %1"
-
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Тражи у контактима..."
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Неуспјех слања фајла"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Пренос фајла није успио"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -56,6 +39,23 @@ msgstr "Фајл за слање"
 #: main.cpp:52
 msgid "Select File To Send"
 msgstr "Избор фајла за слање"
+
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Слање фајла — %1"
+
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Тражи у контактима..."
+
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Неуспјех слања фајла"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Пренос фајла није успио"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

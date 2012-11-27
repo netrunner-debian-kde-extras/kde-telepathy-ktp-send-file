@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-01-04 08:19+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -18,22 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Надсилання файла — %1"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
 
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Шукати у контактах…"
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Не вдалося надіслати файл"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Спроба перенесення зазнала невдачі"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -55,24 +46,29 @@ msgstr "Файл, який слід надіслати"
 msgid "Select File To Send"
 msgstr "Виберіть файл для надсилання"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Юрій Чорноіван"
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Надсилання файла — %1"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "yurchor@ukr.net"
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Шукати у контактах…"
 
-#. i18n: file: mainwindow.ui:33
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Не вдалося надіслати файл"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Спроба перенесення зазнала невдачі"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:5
+#: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Ви наказали програмі надіслати цей файл"
 
-#. i18n: file: mainwindow.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
+#: mainwindow.ui:112
 msgid "Select a recipient"
 msgstr "Виберіть отримувача"
