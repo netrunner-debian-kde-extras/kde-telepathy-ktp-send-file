@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-01-03 10:31+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -13,22 +13,13 @@ msgstr ""
 "X-POFile-SpellExtra: Edmundson Telepathy\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Enviar o ficheiro - %1"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "José Nuno Pires"
 
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Procurar nos Contactos..."
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Não foi possível enviar o ficheiro"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Transferência do Ficheiro sem Sucesso"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zepires@gmail.com"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -50,24 +41,29 @@ msgstr "O ficheiro a enviar"
 msgid "Select File To Send"
 msgstr "Seleccionar o Ficheiro a Enviar"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "José Nuno Pires"
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Enviar o ficheiro - %1"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "zepires@gmail.com"
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Procurar nos Contactos..."
 
-#. i18n: file: mainwindow.ui:33
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Não foi possível enviar o ficheiro"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Transferência do Ficheiro sem Sucesso"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:5
+#: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Está prestes a enviar este ficheiro"
 
-#. i18n: file: mainwindow.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
+#: mainwindow.ui:112
 msgid "Select a recipient"
 msgstr "Seleccionar um destinatário"

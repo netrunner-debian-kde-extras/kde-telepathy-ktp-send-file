@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-01-10 03:37+0200\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -17,22 +17,13 @@ msgstr ""
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Faili saatmine - %1"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Marek Laane"
 
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Otsing kontaktide seast..."
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Faili saatmine nurjus"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Failiülekanne nurjus"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bald@smail.ee"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -54,24 +45,29 @@ msgstr "Saadetav fail"
 msgid "Select File To Send"
 msgstr "Saadetava faili valimine"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Marek Laane"
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Faili saatmine - %1"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "bald@smail.ee"
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Otsing kontaktide seast..."
 
-#. i18n: file: mainwindow.ui:33
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Faili saatmine nurjus"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Failiülekanne nurjus"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:5
+#: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Kavatsed saata selle faili"
 
-#. i18n: file: mainwindow.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
+#: mainwindow.ui:112
 msgid "Select a recipient"
 msgstr "Vali saaja"

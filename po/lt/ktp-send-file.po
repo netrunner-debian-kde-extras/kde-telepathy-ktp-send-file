@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-24 04:00+0100\n"
+"POT-Creation-Date: 2012-06-13 11:49+0200\n"
 "PO-Revision-Date: 2012-04-06 14:58+0300\n"
 "Last-Translator: Andrius Štikonas <stikonas@gmail.com>\n"
 "Language-Team: none\n"
@@ -18,22 +18,13 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
 
-#: mainwindow.cpp:57
-#, kde-format
-msgid "Send file - %1"
-msgstr "Siųsti failą – %1"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Andrius Štikonas"
 
-#: mainwindow.cpp:108
-msgid "Search in Contacts..."
-msgstr "Ieškoti kontaktuose..."
-
-#: mainwindow.cpp:181
-msgid "Failed to send file"
-msgstr "Nepavyko nusiųsti failo"
-
-#: mainwindow.cpp:181
-msgid "File Transfer Failed"
-msgstr "Failo siuntimas nepavyko"
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stikonas@gmail.com"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
@@ -55,24 +46,29 @@ msgstr "Siunčiamas failas"
 msgid "Select File To Send"
 msgstr "Pasirinkite siunčiamą failą"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Andrius Štikonas"
+#: mainwindow.cpp:57
+#, kde-format
+msgid "Send file - %1"
+msgstr "Siųsti failą – %1"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "stikonas@gmail.com"
+#: mainwindow.cpp:108
+msgid "Search in Contacts..."
+msgstr "Ieškoti kontaktuose..."
 
-#. i18n: file: mainwindow.ui:33
+#: mainwindow.cpp:181
+msgid "Failed to send file"
+msgstr "Nepavyko nusiųsti failo"
+
+#: mainwindow.cpp:181
+msgid "File Transfer Failed"
+msgstr "Failo siuntimas nepavyko"
+
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:5
+#: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Pasiruošėte siųsti šį failą"
 
-#. i18n: file: mainwindow.ui:112
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
+#: mainwindow.ui:112
 msgid "Select a recipient"
 msgstr "Pasirinkti gavėją"
