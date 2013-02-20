@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-13 11:49+0200\n"
+"POT-Creation-Date: 2012-11-16 09:50+0100\n"
 "PO-Revision-Date: 2012-01-22 14:53+0800\n"
 "Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
@@ -37,11 +37,11 @@ msgstr "David Edmundson"
 msgid "Author"
 msgstr "作者"
 
-#: main.cpp:43
+#: main.cpp:45
 msgid "The file to send"
 msgstr "要发送的文件"
 
-#: main.cpp:52
+#: main.cpp:54
 msgid "Select File To Send"
 msgstr "选择要发送的文件"
 
