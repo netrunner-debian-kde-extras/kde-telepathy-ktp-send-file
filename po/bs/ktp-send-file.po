@@ -1,57 +1,57 @@
-# Translation of ktp-send-file.po into Serbian.
-# Mladen Pejakovic <pejakm@gmail.com>, 2012.
-# Chusslove Illich <caslav.ilic@gmx.net>, 2012.
+# Bosnian translation for bosnianuniversetranslation
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the bosnianuniversetranslation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: ktp-send-file\n"
+"Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2012-11-16 09:50+0100\n"
-"PO-Revision-Date: 2012-03-19 01:08+0100\n"
-"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
-"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
-"Language: sr@ijekavianlatin\n"
+"PO-Revision-Date: 2013-01-26 14:17+0000\n"
+"Last-Translator: Samir Ribić <Unknown>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Accelerator-Marker: &\n"
-"X-Text-Markup: kde4\n"
-"X-Environment: kde\n"
+"X-Launchpad-Export-Date: 2013-01-26 22:18+0000\n"
+"X-Generator: Launchpad (build 16451)\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Mladen Pejaković"
+msgstr "Samir Ribić"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "pejakm@gmail.com"
+msgstr "samir.ribic@etf.unsa.ba"
 
 #: main.cpp:36
 msgid "Telepathy Send File"
-msgstr "Telepathy slanje fajla"
+msgstr "Slanje datoteke preko Telepathy"
 
 #: main.cpp:38
 msgid "David Edmundson"
-msgstr "Dejvid Edmundson"
+msgstr "David Edmundson"
 
 #: main.cpp:38
 msgid "Author"
-msgstr "Autor"
+msgstr "autor"
 
 #: main.cpp:45
 msgid "The file to send"
-msgstr "Fajl za slanje"
+msgstr "Datoteka za slanje"
 
-# >> @title:window
 #: main.cpp:54
 msgid "Select File To Send"
-msgstr "Izbor fajla za slanje"
+msgstr "Izaberite datoteku za slanje"
 
 #: mainwindow.cpp:57
 #, kde-format
 msgid "Send file - %1"
-msgstr "Slanje fajla — %1"
+msgstr "Slanje datoteke - %1"
 
 #: mainwindow.cpp:108
 msgid "Search in Contacts..."
@@ -59,16 +59,16 @@ msgstr "Traži u kontaktima..."
 
 #: mainwindow.cpp:181
 msgid "Failed to send file"
-msgstr "Neuspjeh slanja fajla"
+msgstr "Neuspjelo slanje datoteke"
 
 #: mainwindow.cpp:181
 msgid "File Transfer Failed"
-msgstr "Prenos fajla nije uspio"
+msgstr "Propao prijenos datoteke"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: mainwindow.ui:33
 msgid "You are about to send this file"
-msgstr "Poslaćete ovaj fajl"
+msgstr "Spremate se da pošaljete ovu datoteku"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: mainwindow.ui:112

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-13 11:49+0200\n"
+"POT-Creation-Date: 2012-11-16 09:50+0100\n"
 "PO-Revision-Date: 2012-02-13 21:54+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -39,11 +39,11 @@ msgstr "David Edmundson"
 msgid "Author"
 msgstr "Forfatter"
 
-#: main.cpp:43
+#: main.cpp:45
 msgid "The file to send"
 msgstr "Fila som skal sendes"
 
-#: main.cpp:52
+#: main.cpp:54
 msgid "Select File To Send"
 msgstr "Velg fil som skal sendes"
 
