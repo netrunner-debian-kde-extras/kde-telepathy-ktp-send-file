@@ -37,49 +37,68 @@
 #include <TelepathyQt/PendingChannelRequest>
 #include <TelepathyQt/PendingReady>
 
-#include <KTp/Models/accounts-model.h>
-#include <KTp/Models/accounts-filter-model.h>
+#include <KTp/actions.h>
+#include <KTp/contact-factory.h>
+#include <KTp/Models/contacts-list-model.h>
+#include <KTp/Models/contacts-filter-model.h>
 #include <KTp/Widgets/contact-grid-widget.h>
 
-//FIXME, copy and paste the approver code for loading this from a config file into this, the contact list and the chat handler.
-#define PREFERRED_FILETRANSFER_HANDLER "org.freedesktop.Telepathy.Client.KTp.FileTransfer"
 
 
-MainWindow::MainWindow(const KUrl &url, QWidget *parent) :
+MainWindow::MainWindow(const KUrl::List &urls, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MainWindow),
-    m_url(url),
-    m_accountsModel(0)
+    m_urls(urls),
+    m_contactsModel(0)
 {
     Tp::registerTypes();
 
     ui->setupUi(this);
-    setWindowTitle(i18n("Send file - %1", url.fileName()));
+    if (urls.size() == 1) {
+        setWindowTitle(i18n("Send file - %1", urls.first().fileName()));
+
+        ui->filesInfoLabel->hide();
+        ui->fileNameLabel->setText(urls.first().fileName());
+    } else {
+        QString fileNames;
+        Q_FOREACH(const KUrl &file, urls) {
+            fileNames += file.fileName() + " ";
+        }
+        setWindowTitle(i18n("Send files - %1", fileNames.trimmed()));
+
+        ui->messageLabel->setText(i18n("You are about to send these files"));
+        ui->filesInfoLabel->setText(i18np("1 file selected", "%1 files selected", urls.count()));
+        ui->fileNameLabel->setText(fileNames.replace(" ", "<br />"));
+    }
 
     kDebug() << KApplication::arguments();
 
-    ui->fileNameLabel->setText(url.fileName());
     m_busyOverlay = new KPixmapSequenceOverlayPainter(this);
     m_busyOverlay->setSequence(KPixmapSequence("process-working", 22));
     m_busyOverlay->setWidget(ui->filePreview);
     m_busyOverlay->start();
 
-    KFileItem file(KFileItem::Unknown, KFileItem::Unknown, url);
-    QStringList availablePlugins = KIO::PreviewJob::availablePlugins();
-    KIO::PreviewJob* job = KIO::filePreview(KFileItemList() << file, QSize(280, 280), &availablePlugins);
-    job->setOverlayIconAlpha(0);
-    job->setScaleType(KIO::PreviewJob::Unscaled);
-    connect(job, SIGNAL(gotPreview(KFileItem,QPixmap)),
-            this, SLOT(onPreviewLoaded(KFileItem,QPixmap)));
-    connect(job, SIGNAL(failed(KFileItem)),
-            this, SLOT(onPreviewFailed(KFileItem)));
-
+    if (urls.size() == 1) {
+        KFileItem file(KFileItem::Unknown, KFileItem::Unknown, urls.first());
+        QStringList availablePlugins = KIO::PreviewJob::availablePlugins();
+        KIO::PreviewJob* job = KIO::filePreview(KFileItemList() << file, QSize(280, 280), &availablePlugins);
+        job->setOverlayIconAlpha(0);
+        job->setScaleType(KIO::PreviewJob::Unscaled);
+        connect(job, SIGNAL(gotPreview(KFileItem, QPixmap)),
+                this, SLOT(onPreviewLoaded(KFileItem, QPixmap)));
+        connect(job, SIGNAL(failed(KFileItem)),
+                this, SLOT(onPreviewFailed(KFileItem)));
+    } else {
+        ui->filePreview->setPixmap(QPixmap(DesktopIcon("dialog-information.png", 128)));
+        m_busyOverlay->stop();
+    }
 
     Tp::AccountFactoryPtr  accountFactory = Tp::AccountFactory::create(QDBusConnection::sessionBus(),
                                                                        Tp::Features() << Tp::Account::FeatureCore
                                                                        << Tp::Account::FeatureAvatar
                                                                        << Tp::Account::FeatureProtocolInfo
-                                                                       << Tp::Account::FeatureProfile);
+                                                                       << Tp::Account::FeatureProfile
+                                                                       << Tp::Account::FeatureCapabilities);
 
     Tp::ConnectionFactoryPtr connectionFactory = Tp::ConnectionFactory::create(QDBusConnection::sessionBus(),
                                                                                Tp::Features() << Tp::Connection::FeatureCore
@@ -87,7 +106,7 @@ MainWindow::MainWindow(const KUrl &url, QWidget *parent) :
                                                                                << Tp::Connection::FeatureRoster
                                                                                << Tp::Connection::FeatureSelfContact);
 
-    Tp::ContactFactoryPtr contactFactory = Tp::ContactFactory::create(Tp::Features()  << Tp::Contact::FeatureAlias
+    Tp::ContactFactoryPtr contactFactory = KTp::ContactFactory::create(Tp::Features()  << Tp::Contact::FeatureAlias
                                                                       << Tp::Contact::FeatureAvatarData
                                                                       << Tp::Contact::FeatureSimplePresence
                                                                       << Tp::Contact::FeatureCapabilities);
@@ -100,14 +119,14 @@ MainWindow::MainWindow(const KUrl &url, QWidget *parent) :
                                                   channelFactory,
                                                   contactFactory);
 
-    m_accountsModel = new AccountsModel(this);
+    m_contactsModel = new KTp::ContactsListModel(this);
     connect(m_accountManager->becomeReady(), SIGNAL(finished(Tp::PendingOperation*)), SLOT(onAccountManagerReady()));
 
 
-    m_contactGridWidget = new KTp::ContactGridWidget(m_accountsModel, this);
+    m_contactGridWidget = new KTp::ContactGridWidget(m_contactsModel, this);
     m_contactGridWidget->contactFilterLineEdit()->setClickMessage(i18n("Search in Contacts..."));
-    m_contactGridWidget->filter()->setPresenceTypeFilterFlags(AccountsFilterModel::ShowOnlyConnected);
-    m_contactGridWidget->filter()->setCapabilityFilterFlags(AccountsFilterModel::FilterByFileTransferCapability);
+    m_contactGridWidget->filter()->setPresenceTypeFilterFlags(KTp::ContactsFilterModel::ShowOnlyConnected);
+    m_contactGridWidget->filter()->setCapabilityFilterFlags(KTp::ContactsFilterModel::FilterByFileTransferCapability);
     ui->recipientVLayout->addWidget(m_contactGridWidget);
 
     connect(m_contactGridWidget,
@@ -126,7 +145,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::onAccountManagerReady()
 {
-    m_accountsModel->setAccountManager(m_accountManager);
+    m_contactsModel->setAccountManager(m_accountManager);
 }
 
 void MainWindow::onDialogAccepted()
@@ -137,26 +156,14 @@ void MainWindow::onDialogAccepted()
         return;
     }
 
-    Tp::ContactPtr contact = m_contactGridWidget->selectedContact();
-    Tp::AccountPtr sendingAccount = m_contactGridWidget->selectedAccount();
-
-    if (sendingAccount.isNull()) {
-        kDebug() << "sending account: NULL";
-    } else {
-        kDebug() << "Account is: " << sendingAccount->displayName();
-        kDebug() << "sending to: " << contact->alias();
-    }
-
     // start sending file
-    kDebug() << "FILE TO SEND: " << m_url.path();
-    Tp::FileTransferChannelCreationProperties fileTransferProperties(m_url.path(), KMimeType::findByFileContent(m_url.path())->name());
+    Q_FOREACH(const KUrl &url, m_urls) {
+        Tp::PendingChannelRequest* channelRequest = KTp::Actions::startFileTransfer(m_contactGridWidget->selectedAccount(),
+                                                                                    m_contactGridWidget->selectedContact(),
+                                                                                    url.path());
 
-    Tp::PendingChannelRequest* channelRequest = sendingAccount->createFileTransfer(contact,
-                                                                                   fileTransferProperties,
-                                                                                   QDateTime::currentDateTime(),
-                                                                                   PREFERRED_FILETRANSFER_HANDLER);
-
-    connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), SLOT(slotFileTransferFinished(Tp::PendingOperation*)));
+        connect(channelRequest, SIGNAL(finished(Tp::PendingOperation*)), SLOT(slotFileTransferFinished(Tp::PendingOperation*)));
+    }
 
     //disable the buttons
     foreach(QAbstractButton* button, ui->buttonBox->buttons()) {

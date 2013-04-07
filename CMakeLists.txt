@@ -1,11 +1,12 @@
 project(ktp-send-file)
 
-set (KTP_SEND_FILE_VERSION "0.5.3")
+set (KTP_SEND_FILE_VERSION "0.6.0")
 
 set (CMAKE_MODULE_PATH
      "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
      ${CMAKE_MODULE_PATH}
 )
+cmake_policy(SET CMP0002 OLD)
 
 set(KDE_MIN_VERSION "4.7.0")
 set(IS_KTP_INTERNAL_MODULE TRUE)

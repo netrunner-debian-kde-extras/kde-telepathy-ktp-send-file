@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-16 09:50+0100\n"
-"PO-Revision-Date: 2012-04-05 19:52+0200\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-02-27 23:30+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -42,32 +42,53 @@ msgid "The file to send"
 msgstr "Το αρχείο προς αποστολή"
 
 #: main.cpp:54
-msgid "Select File To Send"
-msgstr "Επιλέξτε αρχείο προς αποστολή"
+msgid "Select Files To Send"
+msgstr "Επιλέξτε αρχεία προς αποστολή"
 
-#: mainwindow.cpp:57
+#: mainwindow.cpp:58
 #, kde-format
 msgid "Send file - %1"
 msgstr "Αποστολή αρχείου - %1"
 
-#: mainwindow.cpp:108
+#: mainwindow.cpp:67
+#, kde-format
+msgid "Send files - %1"
+msgstr "Αποστολή αρχείων - %1"
+
+#: mainwindow.cpp:69
+msgid "You are about to send these files"
+msgstr "Πρόκειται να στείλετε τα αρχεία αυτά"
+
+#: mainwindow.cpp:70
+#, kde-format
+msgid "1 file selected"
+msgid_plural "%1 files selected"
+msgstr[0] "1 αρχείο επιλέχθηκε"
+msgstr[1] "%1 αρχεία επιλέχθηκαν"
+
+#: mainwindow.cpp:127
 msgid "Search in Contacts..."
 msgstr "Αναζήτηση στις επαφές..."
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:188
 msgid "Failed to send file"
 msgstr "Αποτυχία αποστολής αρχείου"
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:188
 msgid "File Transfer Failed"
 msgstr "Η μεταφορά αρχείου απέτυχε"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, messageLabel)
 #: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Πρόκειται να στείλετε το αρχείο αυτό"
 
+#. i18n: ectx: property (text), widget (QLabel, filesInfoLabel)
+#: mainwindow.ui:84
+msgid "Files info"
+msgstr "Πληροφορίες αρχείων"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: mainwindow.ui:112
+#: mainwindow.ui:134
 msgid "Select a recipient"
 msgstr "Επιλέξτε παραλήπτη"
