@@ -1,20 +1,20 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2011.
+# Vít Pelčák <vit@pelcak.org>, 2011, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-16 09:50+0100\n"
-"PO-Revision-Date: 2011-10-22 12:10+0200\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-02-19 09:36+0100\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
-"Language: \n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 msgctxt "NAME OF TRANSLATORS"
@@ -42,32 +42,54 @@ msgid "The file to send"
 msgstr "Žádný soubor pro odeslání"
 
 #: main.cpp:54
-msgid "Select File To Send"
-msgstr "Zvolte soubor k odeslání"
+msgid "Select Files To Send"
+msgstr "Zvolte soubory k odeslání"
 
-#: mainwindow.cpp:57
+#: mainwindow.cpp:58
 #, kde-format
 msgid "Send file - %1"
 msgstr "Poslat soubor - %1"
 
-#: mainwindow.cpp:108
+#: mainwindow.cpp:67
+#, kde-format
+msgid "Send files - %1"
+msgstr "Odeslat soubory - %1"
+
+#: mainwindow.cpp:69
+msgid "You are about to send these files"
+msgstr "Budou odeslány tyto soubory"
+
+#: mainwindow.cpp:70
+#, kde-format
+msgid "1 file selected"
+msgid_plural "%1 files selected"
+msgstr[0] "Vybrán 1 soubor"
+msgstr[1] "Vybrány %1 soubory"
+msgstr[2] "Vybráno %1 souborů"
+
+#: mainwindow.cpp:127
 msgid "Search in Contacts..."
 msgstr "Hledat v kontaktech..."
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:188
 msgid "Failed to send file"
 msgstr "Soubor se nepodařilo odeslat"
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:188
 msgid "File Transfer Failed"
 msgstr "Přenos souboru selhal"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, messageLabel)
 #: mainwindow.ui:33
 msgid "You are about to send this file"
 msgstr "Odešlete tento soubor"
 
+#. i18n: ectx: property (text), widget (QLabel, filesInfoLabel)
+#: mainwindow.ui:84
+msgid "Files info"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: mainwindow.ui:112
+#: mainwindow.ui:134
 msgid "Select a recipient"
 msgstr "Vybrat příjemce"

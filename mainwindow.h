@@ -34,9 +34,9 @@ namespace Ui {
 
 namespace KTp {
 class ContactGridWidget;
+class ContactsListModel;
 }
 
-class AccountsModel;
 class KFileItem;
 class KPixmapSequenceOverlayPainter;
 
@@ -45,7 +45,7 @@ class MainWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit MainWindow(const KUrl &url, QWidget *parent = 0);
+    explicit MainWindow(const KUrl::List &urls, QWidget *parent = 0);
     ~MainWindow();
 
 private Q_SLOTS:
@@ -58,9 +58,9 @@ private Q_SLOTS:
 
 private:
     Ui::MainWindow *ui;
-    KUrl m_url;
+    KUrl::List m_urls;
     Tp::AccountManagerPtr m_accountManager;
-    AccountsModel *m_accountsModel;
+    KTp::ContactsListModel *m_contactsModel;
     KTp::ContactGridWidget *m_contactGridWidget;
     KPixmapSequenceOverlayPainter *m_busyOverlay;
 };
