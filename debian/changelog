@@ -1,9 +1,13 @@
-ktp-send-file (0.5.3-1) UNRELEASED; urgency=low
+ktp-send-file (0.6.1-1) UNRELEASED; urgency=low
 
+  [ Ritesh Raj Sarraf ]
   * [1243a23] Imported Upstream version 0.5.1
   * [6e21409] Imported Upstream version 0.5.3
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Thu, 21 Feb 2013 00:05:48 +0530
+  [ Diane Trout ]
+  * [a908a65] Imported Upstream version 0.6.1
+
+ -- Diane Trout <diane@ghic.org>  Fri, 17 May 2013 15:01:38 -0700
 
 ktp-send-file (0.4.0-1) unstable; urgency=low
 
