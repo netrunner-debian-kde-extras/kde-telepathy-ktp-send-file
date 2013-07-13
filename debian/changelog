@@ -9,6 +9,7 @@ ktp-send-file (0.6.2-1) UNRELEASED; urgency=low
   * Imported Upstream version 0.6.2
   * Bump ktp-common-internals and kde-telepath-data dependencies to 0.6.2
   * Set Uploaders to Diane Trout and Michał Zając
+  * Update Standards-Version to 3.9.4. No changes needed.
 
  -- Diane Trout <diane@ghic.org>  Mon, 27 May 2013 00:09:47 -0700
 
