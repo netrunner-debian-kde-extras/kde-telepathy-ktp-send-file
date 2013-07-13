@@ -1,9 +1,5 @@
 ktp-send-file (0.6.2-1) UNRELEASED; urgency=low
 
-  [ Ritesh Raj Sarraf ]
-  * [1243a23] Imported Upstream version 0.5.1
-  * [6e21409] Imported Upstream version 0.5.3
-
   [ Diane Trout ]
   * [a908a65] Imported Upstream version 0.6.1
   * Imported Upstream version 0.6.2
