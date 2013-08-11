@@ -1,4 +1,4 @@
-ktp-send-file (0.6.3-1) UNRELEASED; urgency=low
+ktp-send-file (0.6.3-1) unstable; urgency=low
 
   [ Diane Trout ]
   * Imported Upstream version 0.6.2
@@ -8,11 +8,12 @@ ktp-send-file (0.6.3-1) UNRELEASED; urgency=low
   * Update Standards-Version to 3.9.4. No changes needed.
   * Update watch file as KDE Telepathy is now in KDE stable.
 
-  [ Mark Purcell ]
+  [ Mark Purcell ] 
   * Imported Upstream version 0.6.3
-  * Add myself to uploaders
+  * Add myself to Uploaders
+  * Update Build-Depends: libktpcommoninternalsprivate-dev (>= 0.6.3)
 
- -- Mark Purcell <msp@debian.org>  Sat, 10 Aug 2013 09:39:19 +1000
+ -- Mark Purcell <msp@debian.org>  Sun, 11 Aug 2013 10:56:23 +1000
 
 ktp-send-file (0.4.0-1) unstable; urgency=low
 
