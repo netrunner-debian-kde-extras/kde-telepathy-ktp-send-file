@@ -3,6 +3,7 @@ ktp-send-file (0.7.0-1) UNRELEASED; urgency=low
   * New upstream release.
   * Bump ktp-common-internals and kde-telepath-data dependencies to 0.7.0
   * add fix-send-file.patch.
+  * Change Recommends: dolphin | konqueror to Enhances: dolphin, konqueror
 
  -- Diane Trout <diane@ghic.org>  Tue, 29 Oct 2013 22:25:07 -0700
 

@@ -17,7 +17,8 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepath
 Package: kde-telepathy-send-file
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, kde-telepathy-data (>= 0.7.0)
-Recommends: dolphin | konqueror, kde-telepathy
+Recommends: kde-telepathy
+Enhances: dolphin, konqueror
 Description: KDE Telepathy dolphin/konqueror integration plugin
  This package provides a dolphin/konqueror plugin that allows you
  to easily send files to your contacts from a context menu action.
