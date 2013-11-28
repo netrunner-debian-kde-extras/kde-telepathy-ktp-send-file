@@ -1,0 +1,44 @@
+Author: Diane Trout <diane@ghic.org>
+Description: There was a change in the signature of a signal that meant
+ the send-file ui never received notice that a contact was selected.
+--- a/mainwindow.cpp
++++ b/mainwindow.cpp
+@@ -130,8 +130,8 @@
+     ui->recipientVLayout->addWidget(m_contactGridWidget);
+ 
+     connect(m_contactGridWidget,
+-            SIGNAL(selectionChanged(Tp::AccountPtr,Tp::ContactPtr)),
+-            SLOT(onContactSelectionChanged(Tp::AccountPtr,Tp::ContactPtr)));
++            SIGNAL(selectionChanged(Tp::AccountPtr,KTp::ContactPtr)),
++            SLOT(onContactSelectionChanged(Tp::AccountPtr,KTp::ContactPtr)));
+ 
+     ui->buttonBox->button(QDialogButtonBox::Ok)->setDisabled(true);
+     connect(ui->buttonBox, SIGNAL(accepted()), SLOT(onDialogAccepted()));
+@@ -171,7 +171,7 @@
+     }
+ }
+ 
+-void MainWindow::onContactSelectionChanged(Tp::AccountPtr account, Tp::ContactPtr contact)
++void MainWindow::onContactSelectionChanged(Tp::AccountPtr account, KTp::ContactPtr contact)
+ {
+     Q_UNUSED(account)
+     Q_UNUSED(contact)
+--- a/mainwindow.h
++++ b/mainwindow.h
+@@ -26,6 +26,7 @@
+ #include <KUrl>
+ 
+ #include <TelepathyQt/AccountManager>
++#include <KTp/contact.h>
+ 
+ 
+ namespace Ui {
+@@ -53,7 +54,7 @@
+     void onDialogAccepted();
+     void onPreviewLoaded(const KFileItem &item, const QPixmap &preview);
+     void onPreviewFailed(const KFileItem &item);
+-    void onContactSelectionChanged(Tp::AccountPtr account, Tp::ContactPtr contact);
++    void onContactSelectionChanged(Tp::AccountPtr account, KTp::ContactPtr contact);
+     void slotFileTransferFinished(Tp::PendingOperation *op);
+ 
+ private:
