@@ -1,4 +1,4 @@
-ktp-send-file (0.7.0-1) UNRELEASED; urgency=low
+ktp-send-file (0.7.0-1) unstable; urgency=low
 
   * New upstream release.
   * Bump ktp-common-internals and kde-telepath-data dependencies to 0.7.0
