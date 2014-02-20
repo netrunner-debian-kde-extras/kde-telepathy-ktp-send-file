@@ -1,4 +1,4 @@
-ktp-send-file (0.7.0-2) UNRELEASED; urgency=medium
+ktp-send-file (0.7.80-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update Standards-Version to 3.9.5. No changes needed.
