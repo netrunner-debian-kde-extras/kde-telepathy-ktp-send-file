@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-03-01 02:47+0200\n"
+"POT-Creation-Date: 2013-02-16 03:00+0100\n"
+"PO-Revision-Date: 2013-12-22 13:54+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -71,7 +71,7 @@ msgstr[1] "%1 tiedostoa valittu"
 
 #: mainwindow.cpp:127
 msgid "Search in Contacts..."
-msgstr "Etsi yhteystiedoista..."
+msgstr "Etsi yhteystiedoista…"
 
 #: mainwindow.cpp:188
 msgid "Failed to send file"

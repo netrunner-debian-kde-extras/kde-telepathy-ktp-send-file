@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-02-16 03:00+0100\n"
 "PO-Revision-Date: 2012-01-10 03:37+0200\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -43,6 +43,7 @@ msgstr "Saadetav fail"
 
 #: main.cpp:54
 #, fuzzy
+#| msgid "Select File To Send"
 msgid "Select Files To Send"
 msgstr "Saadetava faili valimine"
 
@@ -53,11 +54,13 @@ msgstr "Faili saatmine - %1"
 
 #: mainwindow.cpp:67
 #, fuzzy, kde-format
+#| msgid "Send file - %1"
 msgid "Send files - %1"
 msgstr "Faili saatmine - %1"
 
 #: mainwindow.cpp:69
 #, fuzzy
+#| msgid "You are about to send this file"
 msgid "You are about to send these files"
 msgstr "Kavatsed saata selle faili"
 
