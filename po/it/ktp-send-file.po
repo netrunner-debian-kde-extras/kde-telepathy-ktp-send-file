@@ -2,13 +2,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Pino Toscano <toscano.pino@tiscali.it>, 2011, 2013.
+# Pino Toscano <toscano.pino@tiscali.it>, 2011, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-02-16 09:44+0100\n"
+"PO-Revision-Date: 2014-03-14 07:53+0100\n"
 "Last-Translator: Pino Toscano <toscano.pino@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -93,3 +93,6 @@ msgstr "Informazioni sui file"
 #: mainwindow.ui:134
 msgid "Select a recipient"
 msgstr "Seleziona un destinatario"
+
+#~ msgid "Send"
+#~ msgstr "Invia"
