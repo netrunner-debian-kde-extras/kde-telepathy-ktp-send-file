@@ -4,6 +4,7 @@ ktp-send-file (0.8.1-1) UNRELEASED; urgency=medium
   * Update Standards-Version to 3.9.5. No changes needed.
   * Update ktp-common-interals and kde-telepathy-data dependencies to 0.8.1
   * Remove fix-send-file.patch merged upstream
+  * Update debian/copyright
 
  -- Diane Trout <diane@ghic.org>  Sun, 27 Apr 2014 15:14:21 -0700
 
