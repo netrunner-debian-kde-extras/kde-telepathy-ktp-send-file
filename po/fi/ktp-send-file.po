@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-12-22 13:54+0200\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-03-14 15:45+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -28,25 +28,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: main.cpp:36
+#: main.cpp:37
 msgid "Telepathy Send File"
 msgstr "Telepathyn tiedoston lähetys"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "Author"
 msgstr "Tekijä"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "The file to send"
 msgstr "Lähetettävä tiedosto"
 
-#: main.cpp:54
+#: main.cpp:57
 msgid "Select Files To Send"
 msgstr "Valitse lähetettävät tiedostot"
+
+#: main.cpp:58
+msgid "Send"
+msgstr "Lähetä"
 
 #: mainwindow.cpp:58
 #, kde-format
