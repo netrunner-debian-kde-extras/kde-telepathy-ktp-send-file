@@ -1,11 +1,11 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2011, 2012.
-# Burkhard Lück <lueck@hube-lueck.de>, 2012, 2013.
+# Burkhard Lück <lueck@hube-lueck.de>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-02-16 20:11+0100\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-09-17 13:56+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -23,25 +23,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "schwarzer@kde.org"
 
-#: main.cpp:36
+#: main.cpp:37
 msgid "Telepathy Send File"
 msgstr "Telepathy-Dateiübertragung"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "The file to send"
 msgstr "Die zu sendende Datei"
 
-#: main.cpp:54
+#: main.cpp:57
 msgid "Select Files To Send"
 msgstr "Dateien zum Senden auswählen"
+
+#: main.cpp:58
+msgid "Send"
+msgstr "Senden"
 
 #: mainwindow.cpp:58
 #, kde-format

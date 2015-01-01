@@ -1,15 +1,15 @@
 # Translation of ktp-send-file.po to Catalan
-# Copyright (C) 2012-2013 This_file_is_part_of_KDE
+# Copyright (C) 2012-2014 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep Ma. Ferrer <txemaq@gmail.com>, 2012, 2013.
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: ktp-send-file\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-04-05 19:27+0200\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
+"PO-Revision-Date: 2014-09-20 13:14+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -28,25 +28,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: main.cpp:36
+#: main.cpp:37
 msgid "Telepathy Send File"
 msgstr "Enviament de fitxer del Telepathy"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "Author"
 msgstr "Autor"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "The file to send"
 msgstr "El fitxer a enviar"
 
-#: main.cpp:54
+#: main.cpp:57
 msgid "Select Files To Send"
 msgstr "Selecció dels fitxers a enviar"
+
+#: main.cpp:58
+msgid "Send"
+msgstr "Envia"
 
 #: mainwindow.cpp:58
 #, kde-format

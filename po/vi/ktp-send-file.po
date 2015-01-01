@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2012-12-19 09:30+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -25,27 +25,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "herophuong93@gmail.com"
 
-#: main.cpp:36
+#: main.cpp:37
 msgid "Telepathy Send File"
 msgstr "Telepathy - Gửi tập tin"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "Author"
 msgstr "Tác giả"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "The file to send"
 msgstr "Tập tin để gửi"
 
-#: main.cpp:54
+#: main.cpp:57
 #, fuzzy
 #| msgid "Select File To Send"
 msgid "Select Files To Send"
 msgstr "Chọn tập tin để gửi"
+
+#: main.cpp:58
+msgid "Send"
+msgstr ""
 
 #: mainwindow.cpp:58
 #, kde-format

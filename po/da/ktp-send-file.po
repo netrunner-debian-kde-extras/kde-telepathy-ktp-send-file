@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2013-03-30 09:51+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -25,25 +25,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mschlander@opensuse.org"
 
-#: main.cpp:36
+#: main.cpp:37
 msgid "Telepathy Send File"
 msgstr "Send fil med Telepathy"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "David Edmundson"
 msgstr "David Edmundson"
 
-#: main.cpp:38
+#: main.cpp:39
 msgid "Author"
 msgstr "Ophavsmand"
 
-#: main.cpp:45
+#: main.cpp:46
 msgid "The file to send"
 msgstr "Filen der skal sendes"
 
-#: main.cpp:54
+#: main.cpp:57
 msgid "Select Files To Send"
 msgstr "Vælg filer der skal sendes"
+
+#: main.cpp:58
+msgid "Send"
+msgstr ""
 
 #: mainwindow.cpp:58
 #, kde-format
