@@ -6,6 +6,7 @@ ktp-send-file (15.04.3-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Update build-depends for move to KF5 and rename of
     libktpcommoninternalsprivate-dev to libktp-dev
+  * Update copyright file, remove po/* block
 
  -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 20:18:24 -0700
 
